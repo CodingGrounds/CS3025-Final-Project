@@ -12,15 +12,14 @@ export class GroupOverviewComponent implements OnInit {
   constructor(
     private router: Router
   ) {
-
   }
 
   ngOnInit(): void {
   }
 
-  click() {
+  click(id: Number) {
     console.log("click");
-    this.router.navigateByUrl("/teacher/groups/1");
+    this.router.navigateByUrl("/teacher/groups/" + id);
   }
 
 }

@@ -3,6 +3,7 @@
     justify-content: center;
     margin: 100px 0px;
 }
+mat-card-title,
 mat-card {
     display: flex;
     justify-content: center;
@@ -12,4 +13,9 @@ mat-card {
 .mat-card-item {
     width: 100%;
     min-width: 200px;
+}
+
+.button {
+    justify-content: center;
+    display: flex;
 }
