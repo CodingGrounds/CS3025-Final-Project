@@ -1,1 +1,21 @@
-<p>group-detail works!</p>
+<mat-card>
+    <mat-list>
+        <mat-card-title>
+            <mat-icon class="pointer" (click)="returnHome()">home</mat-icon>
+            Group {{id}}
+        </mat-card-title>
+        <ng-container *ngFor="let item of items">
+            <mat-card>
+                <mat-toolbar color="primary"> {{item.name}}
+                    <mat-icon class="pointer" *ngIf="selected[item.id] === false" (click)="toDown(item.id)"> arrow_drop_up </mat-icon>
+                    <mat-icon class="pointer" *ngIf="selected[item.id] === true" (click)="toUp(item.id)"> arrow_drop_down </mat-icon>
+                </mat-toolbar>
+                <mat-list style="margin-left:30px;" *ngIf="selected[item.id]">
+                    <div *ngFor="let subItem of item.subItems">
+                        <mat-list-item>{{ subItem.name }}</mat-list-item>
+                    </div>
+                </mat-list>
+            </mat-card>
+        </ng-container>
+    </mat-list>
+</mat-card>

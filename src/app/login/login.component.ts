@@ -33,13 +33,11 @@ export class LoginComponent implements OnInit {
 
       if(username === "teacher"){
         console.log("Yes: Teacher");
-        this.router.navigateByUrl('/teacher');
-        
+        this.router.navigateByUrl('/teacher/groups');
       }
       else if (username === "student"){
         console.log("Yes: Student");
-        this.router.navigateByUrl('/students/lessons')
-        
+        this.router.navigateByUrl('/students/lessons');
       }
     }
     else {
