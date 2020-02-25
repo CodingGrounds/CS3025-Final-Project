@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
       }
       else if (username === "student"){
         console.log("Yes: Student");
-        this.router.navigateByUrl('/students')
+        this.router.navigateByUrl('/students/lessons')
         
       }
     }
