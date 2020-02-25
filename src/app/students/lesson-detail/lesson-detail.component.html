@@ -1,1 +1,12 @@
-<p>lesson-detail works!</p>
+<mat-icon class="clickable" (click)="returnHome()">home</mat-icon>
+<div class="flex-container">
+    <mat-card class="flex-box">
+        <mat-card-title>{{ lesson.title }}</mat-card-title>
+        <mat-card-subtitle>{{ section.title }}</mat-card-subtitle>
+        <mat-card-content>
+            {{ section.content }}
+        </mat-card-content>
+    </mat-card>
+</div>
+<mat-icon class="clickable" (click)="navSection(-1)">navigate_before</mat-icon>
+<mat-icon class="clickable" (click)="navSection(1)">navigate_next</mat-icon>
