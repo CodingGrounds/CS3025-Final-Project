@@ -8,9 +8,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class GroupDetailComponent implements OnInit {
 
-  id: Number;
-  items: Object;
-  selected: Object;
+  id: number;
+  items: any;
+  selected: any;
 
   constructor(
     private route: ActivatedRoute,

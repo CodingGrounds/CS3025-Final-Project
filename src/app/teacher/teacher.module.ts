@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GroupDetailComponent } from './group-detail/group-detail.component';
 import { GroupOverviewComponent } from './group-overview/group-overview.component';
-import { MatListModule} from '@angular/material/list';
 import { MatCardModule} from '@angular/material/card';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatListModule} from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { TeacherComponent } from './teacher.component';
 
 @NgModule({
@@ -14,8 +14,8 @@ import { TeacherComponent } from './teacher.component';
     CommonModule,
     MatListModule,
     MatCardModule,
+    MatIconModule,
     MatToolbarModule,
-    MatIconModule
   ]
 })
 export class TeacherModule { }
