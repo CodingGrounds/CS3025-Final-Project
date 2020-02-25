@@ -4,6 +4,8 @@ import { GroupDetailComponent } from './group-detail/group-detail.component';
 import { GroupOverviewComponent } from './group-overview/group-overview.component';
 import { MatListModule} from '@angular/material/list';
 import { MatCardModule} from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 import { TeacherComponent } from './teacher.component';
 
 @NgModule({
@@ -11,7 +13,9 @@ import { TeacherComponent } from './teacher.component';
   imports: [
     CommonModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule,
+    MatIconModule
   ]
 })
 export class TeacherModule { }
