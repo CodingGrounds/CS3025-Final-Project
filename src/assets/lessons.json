@@ -1,0 +1,60 @@
+[
+  {
+    "title": "Income",
+    "lessons": [
+      {
+        "title": "Lesson 1",
+        "sections": [
+          {
+            "title": "Section 1",
+            "content": "This is the content for section 1"
+          },
+          {
+            "title": "Section 2",
+            "content":"This is the content for section 2"
+          }
+        ],
+        "quizzes": [
+          {
+            "title": "Question 1",
+            "type": "multiplechoice | fillintheblanks",
+            "question": "What is the answer to life",
+            "answer": "42"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Savings",
+    "lessons": [
+
+    ]
+  },
+  {
+    "title": "Debt",
+    "lessons": [
+      {
+        "title": "Debt Lesson 1",
+        "sections": [
+          {
+            "title": "Section 1",
+            "content": "This is the content for section 1"
+          },
+          {
+            "title": "Section 2",
+            "content":"This is the content for section 2"
+          }
+        ],
+        "quizzes": [
+          {
+            "title": "Question 1",
+            "type": "multiplechoice | fillintheblanks",
+            "question": "What is the answer to life",
+            "answer": "42"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,1 +1,14 @@
-<p>lesson-overview works!</p>
+<div class="flex-container">
+  <mat-card *ngFor="let module of modules" class="flex-box">
+    <h2>{{ module.id }}. {{ module.title }}</h2>
+    <mat-list>
+      <mat-list-item *ngFor="let lesson of module.lessons">
+        <a href="/students/lessons/{{ module.id }}u{{ lesson.id }}">
+          <mat-card>
+            {{ lesson.id }}. {{ lesson.title }}
+          </mat-card>
+        </a>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+</div>
