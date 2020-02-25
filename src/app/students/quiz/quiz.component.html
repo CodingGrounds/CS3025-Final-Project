@@ -1,1 +1,6 @@
-<p>quiz works!</p>
+<mat-icon class="clickable" (click)="returnHome()">home</mat-icon>
+
+<app-multiple-choice *ngIf="isQuiz('mc')" [quiz]="quiz"></app-multiple-choice>
+<app-fill-in-the-blanks *ngIf="isQuiz('fitb')" [quiz]="quiz"></app-fill-in-the-blanks>
+
+<mat-icon class="clickable" (click)="navSection(1)">navigate_next</mat-icon>

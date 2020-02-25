@@ -49,8 +49,14 @@
         "quizzes": [
           {
             "title": "Question 1",
-            "type": "multiplechoice | fillintheblanks",
+            "type": "multiplechoice",
             "question": "What is the answer to life",
+            "answer": "42"
+          },
+          {
+            "title": "Question 2",
+            "type": "fillintheblanks",
+            "question": "The answer to life is _",
             "answer": "42"
           }
         ]
