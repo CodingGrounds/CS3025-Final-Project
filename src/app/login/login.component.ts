@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import { Router } from '@angular/router'
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-login',
@@ -9,40 +10,37 @@ import { Router } from '@angular/router'
 })
 export class LoginComponent implements OnInit {
 
-  loginForm: FormGroup; 
+  loginForm: FormGroup;
 
   constructor(
     private formBuilder: FormBuilder,
-    private router: Router
-    ) { 
+    private router: Router,
+    private dataService: DataService,
+  ) {
   }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required]
-    })
+    });
   }
 
-  submit(){
-    if(this.loginForm.valid){
-      console.log("Valid");
+  submit() {
+    if (this.loginForm.valid) {
 
-      const username = this.loginForm.get('username').value;
-      console.log(username);
+      const username: string = this.loginForm.get('username').value;
 
-      if(username === "teacher"){
-        console.log("Yes: Teacher");
+      if (username === 'teacher') {
+        console.log('Logging in teacher');
         this.router.navigateByUrl('/teacher/groups');
-      }
-      else if (username === "student"){
-        console.log("Yes: Student");
+      } else if (username.includes('group')) {
+        console.log(`Logging in ${username}`);
+        this.dataService.loginUser(username);
         this.router.navigateByUrl('/students/lessons');
       }
-    }
-    else {
-      console.log("Invalid");
-      //TODO ERROR MESSAGE 
+    } else {
+      console.log('Login form is invalid');
     }
   }
 }

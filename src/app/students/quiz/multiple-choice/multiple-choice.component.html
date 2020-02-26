@@ -1,8 +1,16 @@
 <div class="flex-container">
-    <mat-card class="flex-box">
-        <mat-card-title>{{ quiz.title }}</mat-card-title>
-        <mat-card-content>
-            {{ quiz.question }}
-        </mat-card-content>
-    </mat-card>
+  <mat-card class="flex-box">
+    <mat-card-title>{{ quiz.title }}</mat-card-title>
+    <mat-card-content>
+      {{ quiz.question }}
+      <br>
+      <mat-radio-group
+        class="flex-container flex-column"
+        (change)="optionSelected($event)">
+        <mat-radio-button *ngFor="let option of quiz.options" [value]="option">
+          {{ option }}
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+  </mat-card>
 </div>

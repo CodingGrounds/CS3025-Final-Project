@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-
-import * as data from '../../../assets/lessons.json';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-lesson-detail',
@@ -18,6 +17,7 @@ export class LessonDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
+    private dataService: DataService,
   ) { }
 
   ngOnInit(): void {
@@ -32,17 +32,13 @@ export class LessonDetailComponent implements OnInit {
     const moduleId = Number(routedIdParts[0]) - 1;
     const lessonId = Number(routedIdParts[1]) - 1;
 
-    // tslint:disable-next-line: no-string-literal
-    const modules = data['default'];
-    if (!modules[moduleId] && !modules[moduleId].lessons[lessonId]) {
+    this.lesson = this.dataService.getLesson(moduleId, lessonId);
+    if (!this.lesson) {
       console.log('Could not find lesson');
       this.returnHome();
       return;
     }
-
-    this.lesson = modules[moduleId].lessons[lessonId];
     this.section = this.lesson.sections[this.currentSection];
-    console.log(this.lesson);
   }
 
   returnHome() {

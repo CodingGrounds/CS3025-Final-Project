@@ -1,23 +1,178 @@
 [
   {
-    "title": "Income",
+    "title": "Budgeting",
     "lessons": [
       {
-        "title": "Lesson 1",
+        "title": "Financial Literacy Lesson 1: Budgeting",
         "sections": [
           {
-            "title": "Section 1",
+            "title": "Part 1: Budgeting Introduction",
+            "content": "Did you know that most lottery winners go broke? This is because of poor budgeting.\n\nMeanwhile, some people manage to live well and save up money despite having little income. This is due to good budgeting.\n\nNo matter who you are or how much money you have, you must budget it carefully if you want to meet your financial goals."
+          },
+          {
+            "title": "Part 1.1: Budgeting Fundamentals",
+            "content":"A budget is a tool which lets you keep track of all money coming in and all money going out.\n\nThis allows you to make sure you can keep up with your regular expenses, while setting money aside to meet your goals and have some left over \"just in case\"."
+          },
+          {
+            "title": "Part 2: Budgeting Goals",
+            "content":"The point of budgeting is to help you meet your financial goals. \n\nBut how do we set those goals? Firstly, you need to think about what things are important to you that cost money.\n\nThis will be different depending on where you are in your life.\n\nExample: Food is important to everyone, but many young people don't have to worry about paying for it."
+          },
+          {
+            "title": "Part 2.1: Goal Goals",
+            "content":"Not all goals are made equal. Your goals will be easier to achieve if they are...\n\nSpecific: If your goal is not specific how will you even know if you have achieved it?\n\nRealistic: if your goal is unrealistic, you will probably never achieve it.\n\nTime-Bounded: if your goal has no time limit, it is very hard to plan for."
+          },
+          {
+            "title": "Part 3: Expenses",
+            "content":"Expenses are the things that you spend money on regularly. For many of you, lunch may be an expense. Common expenses for adults are things like car payments, rent and taxes.\n\nYour most important goal should be to have enough money for your regular expenses."
+          },
+          {
+            "title": "Part 3.1: Expense Types",
+            "content":"There are different types of expenses.\nSome expenses are \"fixed\" and cost the same amount regularly. Example: Car payments - $200 per month\nSome expenses are \"variable\" and cost a different amount each time. Example: Gas - $50 to $200 per month\nSome expenses are important, unpredictable and sudden. These are \"emergency\" expenses. Example: Car repairs: $???? per ????"
+          },
+          {
+            "title": "Part 3.2: Budgeting Expenses",
+            "content":"You must never under-estimate your expenses (opposite of income), or your budget could fall apart on a \"bad\" month.\nSome of your expenses will be variable, for example, food. If food costs you an average of $200-300 per month, then you should put around 300 in your budget. That is not to say you shouldn't try to lower this number, but it is important to have a realistic, high-end estimate, just to be safe."
+          },
+          {
+            "title": "Part 4: Income",
+            "content":"Income is all the money you make. You have to try to make your income higher than your regular expenses, with enough leftover to meet your other goals."
+          },
+          {
+            "title": "Part 4.1: Budgeting Income",
+            "content":"You must never over-estimate your income (opposite of expenses), or your budget could fall apart on a \"bad\" month.\nSometimes part of your income is variable, for example, you might get 20$ every time it snows and you shovel the driveway. In this case you should try to under estimate this amount.\nExample: it snows about twice a week in January, so in my budget I might assume that I'm only shovelling five times a month in January, just to be safe."
+          },
+          {
+            "title": "Part 5: Savings",
+            "content":"If you have budgeted effectively, you will have some money left over every month. The point of your budget is to ensure that you have enough left over so that you can save for your future goals.\n\nSome of these goals will be short-term. Example: \"I want to save up $60 to buy a new game next month\" \n\nSome of these goals will be long-term. Example: \"I want to save up $10000 to pay for my first year of university.\""
+          },
+          {
+            "title": "Part 5.1: Other Savings",
+            "content":"It is extremely important to put some money aside regardless of your future goals. Emergency expenses and sudden loss of income can ruin a good budget very fast and majorly delay your future goals.\n\nInvesting is another important form of saving that will be covered in depth another time. Because of interest, money you invest grows over time. This can be a great tool to help meet extra-long-term goals, for example, retirement."
+          },
+          {
+            "title": "Part 6: Making a Budget",
+            "content":"There are 4 main steps to setting up a good budget:\nSet good goals\nMake a budget that achieves these goals\nMonitor spending\nReview your progress"
+          },
+          {
+            "title": "Part 6.1: Making a Budget - Set Goals",
+            "content":"Set good goals!\n\nWe previously explored the three attributes of good goals. Good goals are specific, realistic and time-bounded.\nWhen setting goals for your budget you must also consider which goals are most important. When trying to save money, the least important goals are the ones you want to take money from first.\nAnother consideration for your budget goals is completeness. Budgeting for food isn't the most exciting, but eating foor is very important."
+          },
+          {
+            "title": "Part 6.2: Making a Budget - Meet Goals",
+            "content":"Make a budget that allows you to achieve your goals!\n\nIf you want to save up for an 80 dollar game in one month, you will need to save 20 dollars per week. If this isn't compatible with your budget, you have to change your goal. Maybe save 10 dollars per week and buy it in two months."
+          },
+          {
+            "title": "Part 6.3: Making a Budget - Monitor Spending",
+            "content":"Monitor your spending!\n\nAfter you have made a first version of your budget (or even before), monitor your spending. If you are going over budget in certain areas that is okay, so long as you are keeping track. This will be essential for the following step..."
+          },
+          {
+            "title": "Part 6.4: Making a Budget - Review",
+            "content":"Review your budget regularly and based on your spending habits!\n\nIf you aren't able to meet your food budget, raise it. If you are consistently spending less than you've budgeted on entertainment, budget less for entertainment. Your budget will always be a work in progress but if you are always changing it to better match your current life situation, it will only ever get better!"
+          },
+          {
+            "title": "Conclusion",
+            "content":"This concludes Budgeting lesson 1. Lesson 2 will delve into the strategies and specifics of budgeting a given amount of money for a given amount of expenses. Feel free to review these sections before proceeding to the quiz."
+          }
+        ],
+        "quizzes": [
+          {
+            "title": "Question 1 - Why Budget?",
+            "type": "multiplechoice",
+            "question": "Why should people budget?",
+            "options": ["to meet their goals","to make sure they keep up with expenses","avoid overspending","save for emergencies","all of the above"],
+            "answer": "all of the above",
+            "note": ""
+          },
+          {
+            "title": "Question 2 - Good goals?",
+            "type": "multiplechoice",
+            "question": "consider the following goal: \"I want to save up $2000 for a vacation next year.\"\nIs this a good goal?",
+            "options": ["yes","no","it depends"],
+            "answer": "it depends",
+            "note": "This goal only makes sense for some people, $2000 is unrealistic for some incomes."
+          },
+          {
+            "title": "Question 3 - Good goals?",
+            "type": "multiplechoice",
+            "question": "Bob is 30 and has a good job. He writes the following goal: \"I want to save up $10000 for a boat.\"\nIs this a good goal?",
+            "options": ["yes","no"],
+            "answer": "no",
+            "note": "This goal has no timeline, which makes it unactionable. How much you need to save per month depends on how soon you want the boat."
+          },
+          {
+            "title": "Question 4 - Good goals?",
+            "type": "multiplechoice",
+            "question": "Charlie is 22 and has a good job. They've writes the following goal: \"I want to save $1000 for a vacation next year.\"\nIs this a good goal?",
+            "options": ["yes","no"],
+            "answer": "yes",
+            "note": "This goal is specific, realistic (only saving 83$ per month) and has a timeline. I hope Susan has fun on vacation."
+          },
+          {
+            "title": "Question 5 - Income",
+            "type": "multiplechoice",
+            "question": "Bob is a waiter, he makes 100 to 250 dollars in tips each month.\nWhat amount of tip income would be best to put in his budget?",
+            "options": ["75","150","200","275"],
+            "answer": "150",
+            "note": "It is important to pick a low-end estimate for variable sources of income."
+          },
+          {
+            "title": "Question 6 - Savings",
+            "type": "multiplechoice",
+            "question": "Susan has set the following goal: \"I am pregnant and I want to help my future children pay for college\". What type of savings will best allow Charlie to meet this goal?",
+            "options": ["emergency","long-term","short-term","investment"],
+            "answer": "investment",
+            "note": "investment is a specific strategy for long-term saving. Also note that in this goal, the timeline is implied."
+          },
+          {
+            "title": "Question 7",
+            "type": "multiplechoice",
+            "question": "What should be your most important budgeting goal?",
+            "options": ["fulfill your financial goals","make sure you can pay for your regular expenses","save money in case of emergency","save lots of money"],
+            "answer": "make sure you can pay for your regular expenses",
+            "note": "For most people, if they cannot afford their regular expenses, their life comes grinding to a halt."
+          },
+          {
+            "title": "Question 8 - Expenses",
+            "type": "multiplechoice",
+            "question": "Emma has to pay a $300 speeding ticket this month. What type of expense is this?",
+            "options": ["emergency","variable","fixed","other"],
+            "answer": "emergency",
+            "note": "If Emma was a terribly reckless driver, speeding tickets may be considered a variable expense"
+          },
+          {
+            "title": "Question 9 - Expenses",
+            "type": "multiplechoice",
+            "question": "Tom went to see a lot of movies this month, to the tune of 100$ including popcorn costs. What type of expense is this?",
+            "options": ["emergency","variable","fixed","other"],
+            "answer": "variable",
+            "note": ""
+          },
+          {
+            "title": "Question 10 - Making a Budget",
+            "type": "multiplechoice",
+            "question": "The four keys to making a good budget are:\nA:make a budget that achieves your goals\nB: Monitor spending\nC:Review\nD:Set goals\nWhat is the correct order?",
+            "options": ["ABCD","DABC","BACD","DACB","ADBC"],
+            "answer": "DABC",
+            "note": "Good job!"
+          }
+        ]
+      },
+      {
+        "title": "Budgeting Lesson 2",
+        "sections": [
+          {
+            "title": "Budgeting 2 Section 1",
             "content": "This is the content for section 1"
           },
           {
-            "title": "Section 2",
+            "title": "Budgeting 2 Section 2",
             "content":"This is the content for section 2"
           }
         ],
         "quizzes": [
           {
-            "title": "Question 1",
-            "type": "multiplechoice | fillintheblanks",
+            "title": "Budgeting 2 Question 1",
+            "type": "fillintheblanks",
             "question": "What is the answer to life",
             "answer": "42"
           }
@@ -26,9 +181,50 @@
     ]
   },
   {
-    "title": "Savings",
+    "title": "Income",
     "lessons": [
-
+      {
+        "title": "Income Lesson 1",
+        "sections": [
+          {
+            "title": "Income Section 1",
+            "content": "This is the content for section 1"
+          },
+          {
+            "title": "Income Section 2",
+            "content":"This is the content for section 2"
+          }
+        ],
+        "quizzes": [
+          {
+            "title": "Question 1",
+            "type": "fillintheblanks",
+            "question": "What is the answer to life",
+            "answer": "42"
+          }
+        ]
+      },
+      {
+        "title": "Income Lesson 2",
+        "sections": [
+          {
+            "title": "Income 2 Section 1",
+            "content": "This is the content for section 1"
+          },
+          {
+            "title": "Income 2 Section 2",
+            "content":"This is the content for section 2"
+          }
+        ],
+        "quizzes": [
+          {
+            "title": "Income 2 Question 1",
+            "type": "fillintheblanks",
+            "question": "What is the answer to life",
+            "answer": "42"
+          }
+        ]
+      }
     ]
   },
   {
@@ -38,25 +234,40 @@
         "title": "Debt Lesson 1",
         "sections": [
           {
-            "title": "Section 1",
+            "title": "Debt Section 1",
             "content": "This is the content for section 1"
           },
           {
-            "title": "Section 2",
+            "title": "Debt Section 2",
             "content":"This is the content for section 2"
           }
         ],
         "quizzes": [
           {
-            "title": "Question 1",
-            "type": "multiplechoice",
+            "title": "Debt Question 1",
+            "type": "fillintheblanks",
             "question": "What is the answer to life",
             "answer": "42"
+          }
+        ]
+      },
+      {
+        "title": "Debt Lesson 2",
+        "sections": [
+          {
+            "title": "Debt 2 Section 1",
+            "content": "This is the content for section 1"
           },
           {
-            "title": "Question 2",
+            "title": "Debt 2 Section 2",
+            "content":"This is the content for section 2"
+          }
+        ],
+        "quizzes": [
+          {
+            "title": "Debt 2 Question 1",
             "type": "fillintheblanks",
-            "question": "The answer to life is _",
+            "question": "What is the answer to life",
             "answer": "42"
           }
         ]
