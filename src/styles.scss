@@ -5,6 +5,7 @@ html, body {
 
 body {
   margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url('./assets/silver-and-gold-round-coins-3790639-1080.jpg');
 }
 
 /* Flexbox */
@@ -22,8 +23,20 @@ body {
   margin: 1rem;
 }
 
+.flex-center {
+  align-items: center;
+}
+
 /* Helper */
+
+.center {
+  text-align: center;
+}
 
 .clickable {
   cursor: pointer;
+}
+
+.white-text {
+  color: white;
 }
