@@ -24,4 +24,9 @@ export class GroupOverviewComponent implements OnInit {
   logout() {
     this.router.navigateByUrl('/login');
   }
+
+  onClick(id: number) {
+    this.router.navigateByUrl('/teacher/groups/' + id);
+  }
+
 }
