@@ -1,0 +1,17 @@
+mat-card {
+  width: 700px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.back-arrow {
+  color: rgba(255,0,0, 0.9);
+  scale: 4;
+  padding-top: 20px;
+}
+
+.next-arrow {
+  color: rgba(0,255,0, 0.9);
+  scale: 4;
+  padding-top: 20px;
+}
