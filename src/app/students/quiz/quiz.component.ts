@@ -82,6 +82,12 @@ export class QuizComponent implements OnInit {
 
   submitAnswer() {
     const isCorrect = this.currentAnswer === this.quiz.answer;
+    if (!isCorrect) {
+      alert(`
+        Your answer was incorrect. The correct answer was "${this.quiz.answer}".
+        ${this.quiz.note.length > 0 ? this.quiz.note : ''}
+      `);
+    }
     this.dataService.completeQuiz(this.moduleId, this.lessonId, this.currentQuiz, isCorrect);
   }
 }

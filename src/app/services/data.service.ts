@@ -107,13 +107,16 @@ export class DataService {
       const parsedModule = { title: moduleTitle, lessons: [] };
       Object.keys(rawData[moduleId]).forEach(lessonId => {
         const lessonTitle = this.modules[moduleId].lessons[lessonId].title;
-        const parsedLesson = { title: lessonTitle, score: 0 };
+        const parsedLesson = { title: lessonTitle, score: 0, incorrect: [] };
         let totalCount = 0;
         let correctCount = 0;
         Object.keys(rawData[moduleId][lessonId]).forEach(quizId => {
           totalCount++;
           if (rawData[moduleId][lessonId][quizId]) {
             correctCount++;
+          } else {
+            const quizTitle = this.modules[moduleId].lessons[lessonId].quizzes[quizId].title;
+            parsedLesson.incorrect.push(quizTitle);
           }
         });
         parsedLesson.score = correctCount / totalCount;
