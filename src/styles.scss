@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 html, body {
   height: 100%;
+  font-size: 125%;
 }
 
 body {
@@ -46,7 +47,7 @@ body {
 
 .home-icon {
   color: white;
-  scale: 1.5;
+  font-size: 150%;
   margin: 1rem;
 }
 
@@ -57,7 +58,7 @@ body {
 
 .success-icon {
   color: gold;
-  scale: 1.5;
+  font-size: 150%;
   margin: 3px;
 }
 
