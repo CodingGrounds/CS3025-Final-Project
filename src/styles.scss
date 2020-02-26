@@ -27,6 +27,13 @@ body {
   align-items: center;
 }
 
+/* Material */
+
+.mat-card {
+  opacity: 85%;
+  border: 2px solid black;
+}
+
 /* Helper */
 
 .center {
@@ -41,6 +48,11 @@ body {
   color: white;
   scale: 1.5;
   margin: 1rem;
+}
+
+.list-item {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .success-icon {

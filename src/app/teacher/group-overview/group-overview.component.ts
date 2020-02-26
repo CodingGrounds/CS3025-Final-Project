@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,6 +9,15 @@ import { Router } from '@angular/router'
 })
 export class GroupOverviewComponent implements OnInit {
 
+  groups = [
+    'Group 1',
+    'Group 2',
+    'Group 3',
+    'Group 4',
+    'Group 5',
+    'Group 6',
+  ];
+
   constructor(
     private router: Router
   ) {
@@ -17,9 +26,7 @@ export class GroupOverviewComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  click(id: Number) {
-    console.log("click");
-    this.router.navigateByUrl("/teacher/groups/" + id);
+  logout() {
+    this.router.navigateByUrl('/login');
   }
-
 }
