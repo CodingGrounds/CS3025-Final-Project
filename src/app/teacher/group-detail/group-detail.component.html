@@ -1,21 +1,24 @@
-<mat-card>
-    <mat-list>
-        <mat-card-title>
-            <mat-icon class="pointer" (click)="returnHome()">home</mat-icon>
-            Group {{id}}
-        </mat-card-title>
-        <ng-container *ngFor="let item of items">
-            <mat-card>
-                <mat-toolbar color="primary"> {{item.name}}
-                    <mat-icon class="pointer" *ngIf="selected[item.id] === false" (click)="toDown(item.id)"> arrow_drop_up </mat-icon>
-                    <mat-icon class="pointer" *ngIf="selected[item.id] === true" (click)="toUp(item.id)"> arrow_drop_down </mat-icon>
-                </mat-toolbar>
-                <mat-list style="margin-left:30px;" *ngIf="selected[item.id]">
-                    <div *ngFor="let subItem of item.subItems">
-                        <mat-list-item>{{ subItem.name }}</mat-list-item>
-                    </div>
-                </mat-list>
-            </mat-card>
-        </ng-container>
-    </mat-list>
-</mat-card>
+<mat-icon class="clickable home-icon" (click)="returnHome()">home</mat-icon>
+<div class="flex-container flex-center">
+  <mat-card>
+    <mat-card-title class="center">{{ selectedGroup }}</mat-card-title>
+    <mat-card-content>
+      <h4 *ngIf="groupData.length === 0">
+        Selected group has not completed any lessons yet
+      </h4>
+      <mat-accordion *ngIf="groupData.length > 0">
+        <mat-expansion-panel *ngFor="let module of groupData">
+          <mat-expansion-panel-header>
+            <mat-panel-title>{{ module.title }}</mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <mat-list>
+            <mat-list-item *ngFor="let lesson of module.lessons">
+              {{ lesson.title }}: {{ lesson.score * 100 }}%
+            </mat-list-item>
+          </mat-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-card-content>
+  </mat-card>
+</div>

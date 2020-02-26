@@ -92,6 +92,38 @@ export class DataService {
     return this.modules[moduleId].lessons[lessonId];
   }
 
+  getGroups() {
+    return Object.keys(this.groupData);
+  }
+
+  getResults(group: string) {
+    this.fromLocalStorage();
+    const parsedData = [];
+    const rawData = this.groupData[group];
+    // This is a mess. I am sorry...
+    // The purpose of this is to translate the stored results into human readable format
+    Object.keys(rawData).forEach(moduleId => {
+      const moduleTitle = this.modules[moduleId].title;
+      const parsedModule = { title: moduleTitle, lessons: [] };
+      Object.keys(rawData[moduleId]).forEach(lessonId => {
+        const lessonTitle = this.modules[moduleId].lessons[lessonId].title;
+        const parsedLesson = { title: lessonTitle, score: 0 };
+        let totalCount = 0;
+        let correctCount = 0;
+        Object.keys(rawData[moduleId][lessonId]).forEach(quizId => {
+          totalCount++;
+          if (rawData[moduleId][lessonId][quizId]) {
+            correctCount++;
+          }
+        });
+        parsedLesson.score = correctCount / totalCount;
+        parsedModule.lessons.push(parsedLesson);
+      });
+      parsedData.push(parsedModule);
+    });
+    return parsedData;
+  }
+
   // TODO:
   checkLessonCompleted(moduleId: number, lessonId: number) {
     this.fromLocalStorage();

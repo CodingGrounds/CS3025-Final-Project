@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-group-overview',
@@ -9,21 +9,16 @@ import { Router } from '@angular/router';
 })
 export class GroupOverviewComponent implements OnInit {
 
-  groups = [
-    'Group 1',
-    'Group 2',
-    'Group 3',
-    'Group 4',
-    'Group 5',
-    'Group 6',
-  ];
+  groups: string[];
 
   constructor(
-    private router: Router
+    private router: Router,
+    private dataService: DataService,
   ) {
   }
 
   ngOnInit(): void {
+    this.groups = this.dataService.getGroups();
   }
 
   logout() {

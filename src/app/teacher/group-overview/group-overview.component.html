@@ -3,8 +3,8 @@
   <mat-card>
     <mat-action-list>
       <mat-card-title class="center">Teams Overview </mat-card-title>
-      <mat-list-item *ngFor="let group of groups; let i = index" role="listitem">
-        <a href="/teacher/groups/{{ i }}" class="list-item">
+      <mat-list-item *ngFor="let group of groups" role="listitem">
+        <a href="/teacher/groups/{{ group }}" class="list-item">
           {{ group }}
         </a>
       </mat-list-item>
