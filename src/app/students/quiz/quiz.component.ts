@@ -57,6 +57,10 @@ export class QuizComponent implements OnInit {
   }
 
   isQuiz(type: string) {
+    if (this.quiz == null) {
+      return false;
+    }
+
     switch (type) {
       case 'fitb':
         return this.quiz.type === 'fillintheblanks';
