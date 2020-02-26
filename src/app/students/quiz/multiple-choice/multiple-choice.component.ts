@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-multiple-choice',
@@ -9,9 +9,14 @@ export class MultipleChoiceComponent implements OnInit {
 
   @Input() quiz: any;
 
+  @Output() quizComplete = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.quiz);
+  }
+
+  optionSelected(event: any) {
+    this.quizComplete.next(event.value);
   }
 }

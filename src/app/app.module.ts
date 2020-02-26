@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { StudentsModule } from './students/students.module';
 import { TeacherModule } from './teacher/teacher.module';
+import { DataServiceModule } from './services/data.service';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
@@ -31,6 +32,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     MatListModule,
     StudentsModule,
     TeacherModule,
+    DataServiceModule.forRoot(),
     AppRoutingModule,
     NoopAnimationsModule
   ],

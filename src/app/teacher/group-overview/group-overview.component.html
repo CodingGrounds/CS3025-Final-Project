@@ -1,30 +1,13 @@
-<mat-card>
+<mat-icon class="clickable home-icon" (click)="logout()">exit_to_app</mat-icon>
+<div class="flex-container flex-center">
+  <mat-card>
     <mat-action-list>
-        <mat-card-title> Team Overview </mat-card-title>
-        <mat-list-item role="listitem" (click)="click(1)">
-            <button mat-button class="pointer" >
-                Group 1
-            </button>
-        </mat-list-item>
-        <mat-list-item role="listitem" (click)="click(2)">
-            <button mat-button class="pointer" >
-                Group 2
-            </button>
-        </mat-list-item>
-        <mat-list-item role="listitem" (click)="click(3)"> 
-            <button mat-button class="pointer">
-                Group 3
-            </button>
-        </mat-list-item>
-        <mat-list-item role="listitem" (click)="click(4)">
-            <button mat-button class="pointer">
-                Group 4
-            </button>
-        </mat-list-item>
-        <mat-list-item role="listitem" (click)="click(5)">
-            <button mat-button class="pointer">
-                Group 5
-            </button>
-        </mat-list-item>
+      <mat-card-title class="center">Teams Overview </mat-card-title>
+      <mat-list-item *ngFor="let group of groups" role="listitem">
+        <a href="/teacher/groups/{{ group }}" class="list-item">
+          {{ group }}
+        </a>
+      </mat-list-item>
     </mat-action-list>
-</mat-card>
+  </mat-card>
+</div>

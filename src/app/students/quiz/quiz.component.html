@@ -1,6 +1,16 @@
-<mat-icon class="clickable" (click)="returnHome()">home</mat-icon>
+<mat-icon class="clickable home-icon" (click)="returnHome()">home</mat-icon>
 
-<app-multiple-choice *ngIf="isQuiz('mc')" [quiz]="quiz"></app-multiple-choice>
-<app-fill-in-the-blanks *ngIf="isQuiz('fitb')" [quiz]="quiz"></app-fill-in-the-blanks>
+<app-multiple-choice
+  *ngIf="isQuiz('mc')"
+  [quiz]="quiz"
+  (quizComplete)="answerChosen($event)">
+</app-multiple-choice>
+<app-fill-in-the-blanks
+  *ngIf="isQuiz('fitb')"
+  [quiz]="quiz"
+  (quizComplete)="answerChosen($event)">
+</app-fill-in-the-blanks>
 
-<mat-icon class="clickable" (click)="navSection(1)">navigate_next</mat-icon>
+<div class="flex-container">
+  <mat-icon class="clickable next-arrow" (click)="navSection(1)">navigate_next</mat-icon>
+</div>

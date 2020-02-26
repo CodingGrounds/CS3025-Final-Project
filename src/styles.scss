@@ -1,10 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 html, body {
   height: 100%;
+  font-size: 125%;
 }
 
 body {
   margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url('./assets/silver-and-gold-round-coins-3790639-1080.jpg');
 }
 
 /* Flexbox */
@@ -22,8 +24,44 @@ body {
   margin: 1rem;
 }
 
+.flex-center {
+  align-items: center;
+}
+
+/* Material */
+
+.mat-card {
+  opacity: 85%;
+  border: 2px solid black;
+}
+
 /* Helper */
+
+.center {
+  text-align: center;
+}
 
 .clickable {
   cursor: pointer;
+}
+
+.home-icon {
+  color: white;
+  font-size: 150%;
+  margin: 1rem;
+}
+
+.list-item {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.success-icon {
+  color: gold;
+  font-size: 150%;
+  margin: 3px;
+}
+
+.white-text {
+  color: white;
 }

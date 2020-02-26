@@ -1,12 +1,14 @@
+<mat-icon class="clickable home-icon" (click)="logout()">exit_to_app</mat-icon>
 <div class="flex-container">
   <mat-card *ngFor="let module of modules" class="flex-box">
-    <h2>{{ module.id }}. {{ module.title }}</h2>
+    <h2 class="center">{{ module.title }}</h2>
     <mat-list>
       <mat-list-item *ngFor="let lesson of module.lessons">
-        <a href="/students/lessons/{{ module.id }}u{{ lesson.id }}">
-          <mat-card>
-            {{ lesson.id }}. {{ lesson.title }}
-          </mat-card>
+        <a href="/students/lessons/{{ module.id }}u{{ lesson.id }}" class="list-item">
+          <!-- TODO: Implement a way to track progress and show a star if completed -->
+          <mat-icon class="success-icon">star_border</mat-icon>
+          <mat-icon class="success-icon">star</mat-icon>
+          {{ lesson.title }}
         </a>
       </mat-list-item>
     </mat-list>

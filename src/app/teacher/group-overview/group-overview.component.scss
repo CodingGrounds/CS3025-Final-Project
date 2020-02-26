@@ -1,24 +1,4 @@
-:host {
-    display: flex;
-    justify-content: center;
-    margin: 100px 0px;
-}
-mat-card-title,
 mat-card {
-    display: flex;
-    justify-content: center;
-}
-
-.mat-list
-.mat-card-item {
-    width: 100%;
-    min-width: 200px;
-}
-
-.button {
-    justify-content: center;
-    display: flex;
-}
-.pointer{
-    cursor: pointer;
+  width: 700px;
+  min-height: 300px;
 }

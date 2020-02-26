@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
-
+import { Router } from '@angular/router';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-group-overview',
@@ -9,17 +9,19 @@ import { Router } from '@angular/router'
 })
 export class GroupOverviewComponent implements OnInit {
 
+  groups: string[];
+
   constructor(
-    private router: Router
+    private router: Router,
+    private dataService: DataService,
   ) {
   }
 
   ngOnInit(): void {
+    this.groups = this.dataService.getGroups();
   }
 
-  click(id: Number) {
-    console.log("click");
-    this.router.navigateByUrl("/teacher/groups/" + id);
+  logout() {
+    this.router.navigateByUrl('/login');
   }
-
 }
