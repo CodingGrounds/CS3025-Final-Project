@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import * as data from '../../../assets/lessons.json';
 
@@ -11,7 +12,9 @@ export class LessonOverviewComponent implements OnInit {
 
   modules: any[] = [];
 
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
     // tslint:disable-next-line: no-string-literal
@@ -23,5 +26,9 @@ export class LessonOverviewComponent implements OnInit {
         l.id = j + 1;
       });
     });
+  }
+
+  logout() {
+    this.router.navigateByUrl('/login');
   }
 }
