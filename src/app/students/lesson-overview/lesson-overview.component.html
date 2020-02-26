@@ -2,15 +2,13 @@
 <div class="flex-container">
   <mat-card *ngFor="let module of modules" class="flex-box">
     <h2 class="center">{{ module.title }}</h2>
-    <mat-list>
-      <mat-list-item *ngFor="let lesson of module.lessons">
-        <a href="/students/lessons/{{ module.id }}u{{ lesson.id }}" class="list-item">
+    <mat-action-list>
+      <mat-list-item *ngFor="let lesson of module.lessons" role="listitem" (click)="onClick(module.id, lesson.id)">
           <!-- TODO: Implement a way to track progress and show a star if completed -->
           <mat-icon class="success-icon">star_border</mat-icon>
           <mat-icon class="success-icon">star</mat-icon>
           {{ lesson.title }}
-        </a>
       </mat-list-item>
-    </mat-list>
+    </mat-action-list>
   </mat-card>
 </div>

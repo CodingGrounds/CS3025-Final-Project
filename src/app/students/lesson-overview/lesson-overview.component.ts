@@ -23,4 +23,8 @@ export class LessonOverviewComponent implements OnInit {
   logout() {
     this.router.navigateByUrl('/login');
   }
+
+  onClick(moduleId: number, lessonId: number) {
+    this.router.navigateByUrl(`/students/lessons/${moduleId}u${lessonId}`);
+  }
 }
