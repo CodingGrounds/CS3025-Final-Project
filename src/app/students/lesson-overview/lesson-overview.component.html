@@ -1,16 +1,24 @@
-<mat-icon class="clickable home-icon" (click)="logout()">exit_to_app</mat-icon>
-<div class="flex-container">
-  <mat-card *ngFor="let module of modules" class="flex-box">
+<mat-icon class="clickable home-icon" (click)="logout()">home</mat-icon>
+<div class="flex-container" style="max-height: 85%;">
+  <mat-card
+    *ngFor="let module of modules; let modId = index"
+    class="flex-box"
+    style="width: 25%;">
     <h2 class="center">{{ module.title }}</h2>
-    <mat-list>
-      <mat-list-item *ngFor="let lesson of module.lessons">
-        <a href="/students/lessons/{{ module.id }}u{{ lesson.id }}" class="list-item">
-          <!-- TODO: Implement a way to track progress and show a star if completed -->
-          <mat-icon class="success-icon">star_border</mat-icon>
-          <mat-icon class="success-icon">star</mat-icon>
-          {{ lesson.title }}
-        </a>
-      </mat-list-item>
-    </mat-list>
+    <div style="max-height: 90%; overflow-y: scroll;">
+      <mat-list>
+        <mat-list-item *ngFor="let lesson of module.lessons; let i = index" style="margin-top: 20px; height: 80px;">
+          <a href="/students/lessons/{{ module.id }}u{{ lesson.id }}" class="list-item">
+            <!-- TODO: Implement a way to track progress and show a star if completed -->
+            <h4 style="font-size: larger; margin-bottom: 5px;">
+              <mat-icon class="success-icon" *ngIf="i < getStarMax(modId)">star</mat-icon>
+              <mat-icon class="success-icon" style="opacity: 0;" *ngIf="i >= getStarMax(modId)">star</mat-icon>
+              <p style="display: inline; padding-left: 15px;">{{ lesson.title }}</p>
+            </h4>
+            <p style="padding-left: 50px;">{{ lesson.description }}</p>
+          </a>
+        </mat-list-item>
+      </mat-list>
+    </div>
   </mat-card>
 </div>

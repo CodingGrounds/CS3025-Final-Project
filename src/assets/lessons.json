@@ -4,6 +4,7 @@
     "lessons": [
       {
         "title": "Financial Literacy Lesson 1: Budgeting",
+        "description": "description for lesson 1",
         "sections": [
           {
             "title": "Part 1: Budgeting Introduction",
@@ -159,6 +160,7 @@
       },
       {
         "title": "Budgeting Lesson 2",
+        "description": "description for lesson 2",
         "sections": [
           {
             "title": "Budgeting 2 Section 1",
@@ -177,7 +179,25 @@
             "answer": "42"
           }
         ]
-      }
+      },
+      { "title": "Budgeting Lesson 3", "description": "description for lesson 3" },
+      { "title": "Budgeting Lesson 4", "description": "description for lesson 4" },
+      { "title": "Budgeting Lesson 5", "description": "description for lesson 5" },
+      { "title": "Budgeting Lesson 6", "description": "description for lesson 6" },
+      { "title": "Budgeting Lesson 7", "description": "description for lesson 7" },
+      { "title": "Budgeting Lesson 8", "description": "description for lesson 8" },
+      { "title": "Budgeting Lesson 9", "description": "description for lesson 9" },
+      { "title": "Budgeting Lesson 10", "description": "description for lesson 10" },
+      { "title": "Budgeting Lesson 11" },
+      { "title": "Budgeting Lesson 12" },
+      { "title": "Budgeting Lesson 13" },
+      { "title": "Budgeting Lesson 14" },
+      { "title": "Budgeting Lesson 15" },
+      { "title": "Budgeting Lesson 16" },
+      { "title": "Budgeting Lesson 17" },
+      { "title": "Budgeting Lesson 18" },
+      { "title": "Budgeting Lesson 19" },
+      { "title": "Budgeting Lesson 20" }
     ]
   },
   {
@@ -185,6 +205,7 @@
     "lessons": [
       {
         "title": "Income Lesson 1",
+        "description": "description for lesson 1",
         "sections": [
           {
             "title": "Income Section 1",
@@ -206,6 +227,7 @@
       },
       {
         "title": "Income Lesson 2",
+        "description": "description for lesson 2",
         "sections": [
           {
             "title": "Income 2 Section 1",
@@ -224,7 +246,25 @@
             "answer": "42"
           }
         ]
-      }
+      },
+      { "title": "Income Lesson 3", "description": "description for lesson 3" },
+      { "title": "Income Lesson 4", "description": "description for lesson 4" },
+      { "title": "Income Lesson 5", "description": "description for lesson 5" },
+      { "title": "Income Lesson 6", "description": "description for lesson 6" },
+      { "title": "Income Lesson 7", "description": "description for lesson 7" },
+      { "title": "Income Lesson 8", "description": "description for lesson 8" },
+      { "title": "Income Lesson 9", "description": "description for lesson 9" },
+      { "title": "Income Lesson 10", "description": "description for lesson 10" },
+      { "title": "Income Lesson 11" },
+      { "title": "Income Lesson 12" },
+      { "title": "Income Lesson 13" },
+      { "title": "Income Lesson 14" },
+      { "title": "Income Lesson 15" },
+      { "title": "Income Lesson 16" },
+      { "title": "Income Lesson 17" },
+      { "title": "Income Lesson 18" },
+      { "title": "Income Lesson 19" },
+      { "title": "Income Lesson 20" }
     ]
   },
   {
@@ -232,6 +272,7 @@
     "lessons": [
       {
         "title": "Debt Lesson 1",
+        "description": "description for lesson 1",
         "sections": [
           {
             "title": "Debt Section 1",
@@ -253,6 +294,7 @@
       },
       {
         "title": "Debt Lesson 2",
+        "description": "description for lesson 2",
         "sections": [
           {
             "title": "Debt 2 Section 1",
@@ -271,7 +313,25 @@
             "answer": "42"
           }
         ]
-      }
+      },
+      { "title": "Debt Lesson 3", "description": "description for lesson 3" },
+      { "title": "Debt Lesson 4", "description": "description for lesson 4" },
+      { "title": "Debt Lesson 5", "description": "description for lesson 5" },
+      { "title": "Debt Lesson 6", "description": "description for lesson 6" },
+      { "title": "Debt Lesson 7", "description": "description for lesson 7" },
+      { "title": "Debt Lesson 8", "description": "description for lesson 8" },
+      { "title": "Debt Lesson 9", "description": "description for lesson 9" },
+      { "title": "Debt Lesson 10", "description": "description for lesson 10" },
+      { "title": "Debt Lesson 11" },
+      { "title": "Debt Lesson 12" },
+      { "title": "Debt Lesson 13" },
+      { "title": "Debt Lesson 14" },
+      { "title": "Debt Lesson 15" },
+      { "title": "Debt Lesson 16" },
+      { "title": "Debt Lesson 17" },
+      { "title": "Debt Lesson 18" },
+      { "title": "Debt Lesson 19" },
+      { "title": "Debt Lesson 20" }
     ]
   }
 ]

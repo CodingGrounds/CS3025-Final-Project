@@ -1,14 +1,20 @@
 <mat-icon class="clickable home-icon" (click)="returnHome()">home</mat-icon>
+<mat-progress-bar
+  mode="determinate"
+  matTooltip="progress towards quizzes"
+  style="margin: 40px 0px 20px 0px;"
+  [value]="progressPercent">
+</mat-progress-bar>
 <div class="flex-container">
   <mat-card class="flex-box">
-    <mat-card-title>{{ lesson.title }}</mat-card-title>
-    <mat-card-subtitle>{{ section.title }}</mat-card-subtitle>
-    <mat-card-content>
+    <mat-card-title style="font-size: larger;">{{ lesson.title }}</mat-card-title>
+    <mat-card-subtitle style="font-size: larger;">{{ section.title }}</mat-card-subtitle>
+    <mat-card-content style="font-size: larger; padding-top: 20px;">
       {{ section.content }}
     </mat-card-content>
   </mat-card>
 </div>
 <div class="flex-container">
-  <mat-icon class="clickable back-arrow" (click)="navSection(-1)">navigate_before</mat-icon>
-  <mat-icon class="clickable next-arrow" (click)="navSection(1)">navigate_next</mat-icon>
+  <mat-icon class="clickable arrow" (click)="navSection(-1)">navigate_before</mat-icon>
+  <mat-icon class="clickable arrow" (click)="navSection(1)">navigate_next</mat-icon>
 </div>

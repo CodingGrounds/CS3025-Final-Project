@@ -14,6 +14,9 @@ export class LessonDetailComponent implements OnInit {
   lesson: any;
   section: any;
 
+  sectionCount = 0;
+  progressPercent = 0;
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -38,6 +41,8 @@ export class LessonDetailComponent implements OnInit {
       this.returnHome();
       return;
     }
+    this.sectionCount = this.lesson.sections.length;
+    this.progressPercent = this.currentSection / this.sectionCount * 100;
     this.section = this.lesson.sections[this.currentSection];
   }
 
@@ -52,6 +57,7 @@ export class LessonDetailComponent implements OnInit {
       this.router.navigateByUrl(`/students/quizzes/${this.currentRoute}`);
     } else {
       this.currentSection += navAmount;
+      this.progressPercent = this.currentSection / this.sectionCount * 100;
       this.section = this.lesson.sections[this.currentSection];
     }
   }

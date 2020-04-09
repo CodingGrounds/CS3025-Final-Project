@@ -23,4 +23,13 @@ export class LessonOverviewComponent implements OnInit {
   logout() {
     this.router.navigateByUrl('/login');
   }
+
+  getStarMax(seed: number) {
+    const random = (seed: number) => {
+      const x = Math.sin(seed + 1) * 10000;
+      return x - Math.floor(x);
+    }
+
+    return random(seed) * 7;
+  }
 }

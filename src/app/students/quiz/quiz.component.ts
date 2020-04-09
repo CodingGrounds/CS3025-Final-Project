@@ -16,6 +16,9 @@ export class QuizComponent implements OnInit {
   lesson: any;
   quiz: any;
 
+  quizCount = 0;
+  progressPercent = 0;
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -39,6 +42,8 @@ export class QuizComponent implements OnInit {
       this.returnHome();
       return;
     }
+    this.quizCount = this.lesson.sections.length;
+    this.progressPercent = this.currentQuiz / this.quizCount * 100;
     this.quiz = this.lesson.quizzes[this.currentQuiz];
   }
 
@@ -56,6 +61,7 @@ export class QuizComponent implements OnInit {
       }
       this.submitAnswer();
       this.currentQuiz += navAmount;
+      this.progressPercent = this.currentQuiz / this.quizCount * 100;
       this.currentAnswer = null;
       this.quiz = this.lesson.quizzes[this.currentQuiz];
     }

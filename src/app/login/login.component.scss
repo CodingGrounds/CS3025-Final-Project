@@ -1,5 +1,6 @@
 mat-card-title {
   height: 15%;
+  font-size: larger;
 }
 
 mat-card-content {
@@ -15,8 +16,9 @@ mat-card-actions {
 }
 
 .mat-card {
-  width: 500px;
-  height: 300px;
+  width: 550px;
+  height: 350px;
+  opacity: 95%;
 }
 
 .error {

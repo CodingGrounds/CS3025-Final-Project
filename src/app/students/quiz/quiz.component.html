@@ -1,4 +1,10 @@
 <mat-icon class="clickable home-icon" (click)="returnHome()">home</mat-icon>
+<mat-progress-bar
+  mode="determinate"
+  matTooltip="progress towards lesson completion"
+  style="margin: 40px 0px 20px 0px;"
+  [value]="progressPercent">
+</mat-progress-bar>
 
 <app-multiple-choice
   *ngIf="isQuiz('mc')"
